@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Stock Dashboard</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Stock Market Dashboard</h1>
+
+<input id="symbol" placeholder="Enter stock symbol">
+<button onclick="loadStock()">Search</button>
+
+<h2>Price Chart</h2>
+<canvas id="priceChart"></canvas>
+
+<h2>Financial Data</h2>
+<div id="fundamentals"></div>
+
+<h2>Latest News</h2>
+<div id="news"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
