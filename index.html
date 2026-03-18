@@ -2,34 +2,57 @@
 <html>
 
 <head>
-<title>Stock Dashboard</title>
+    <title>Stock Dashboard</title>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #0f172a;
+            color: white;
+            padding: 20px;
+        }
 
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        canvas {
+            background: white;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Stock Market Dashboard</h1>
+<h1>Stock Dashboard</h1>
 
-<input id="symbol" placeholder="Enter stock symbol">
+<input id="symbol" placeholder="Enter stock (AAPL)">
 <button onclick="loadStock()">Search</button>
 
 <h2>Price Chart</h2>
 <canvas id="priceChart"></canvas>
-<script src="components/chart.js"></script>  
 
-<h2>Financial Data</h2>
+<h2>Fundamentals</h2>
 <div id="fundamentals"></div>
 
-<script src="components/fundamentals.js"></script>  
-
-<h2>Latest News</h2>
+<h2>News</h2>
 <div id="news"></div>
 
 <script src="app.js"></script>
 
 </body>
 </html>
+
